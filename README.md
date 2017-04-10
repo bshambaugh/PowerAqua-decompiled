@@ -1,0 +1,1 @@
+These are the core java files that I found for PowerAqua. I created them with the JD-GUI (http://jd.benow.ca/) decompiler from the class files in the jars at https://sourceforge.net/projects/poweraqua/files/code/webapps-tomcat/ . All code was written by Vanessa Lopez.
