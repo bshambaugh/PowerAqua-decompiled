@@ -1,0 +1,15 @@
+cd /Users/vl474/Trabajo/NetBeans\ projects/PowerAquaNetBeans/
+CLASSPATH=$CLASSPATH:.:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/xmlParserAPIs.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/xercesImpl.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/lucene-core-1.9.1.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/lucene-spellchecker-1.9.1.jar
+
+CLASSPATH=$CLASSPATH:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/core.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/indexingService.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/lucene.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/serviceConfig.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/poweraquaDB.jar
+
+CLASSPATH=$CLASSPATH:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/openrdf-model.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/rio.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/openrdf-util.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/sesame.jar
+
+CLASSPATH=$CLASSPATH:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/antlr-2.7.5.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/arq.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/commons-logging.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/concurrent.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/icu4j_3_4.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/iri.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/jazzlib-binary-0.07-juz.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/jena.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/jenatest.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/json.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/junit.jar
+
+CLASSPATH=$CLASSPATH:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/lib/mysql-connector-java-3.1.11-bin.jar:/Applications/apache-tomcat-5.5.23/webapps/powerAqua/WEB-INF/aquaplugins/SesamePlugin.jar
+
+export CLASSPATH
+
+echo $CLASSPATH
+java -Xmx1200M SesamePlugin.SesameURLDatabaseTransformer
