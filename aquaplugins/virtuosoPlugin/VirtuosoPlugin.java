@@ -2684,6 +2684,8 @@ public class VirtuosoPlugin
     throws Exception
   {}
 
+// Pulled the entityType functions from PowerAquaOpensource/src/virtuosoPlugin/VirtuosoPlugin.java ... because 
+// the entityType function did not compile correctly (pasted function not tested)
 /* Returns the type for the entity according to the three static values of this interface */
     public String entityType(String onto, String e){
         //  "Class"
