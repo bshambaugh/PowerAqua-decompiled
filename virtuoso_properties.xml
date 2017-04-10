@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIGURATION>
+
+<!-- // examples
+<SERVER>
+	<URL>http://lod.openlinksw.com/sparql</URL>
+	<PORT></PORT>
+	<LOGIN></LOGIN>
+	<PASSWORD></PASSWORD>
+	<GRAPHS>
+		<GRAPH>
+			<IRI>http://dbpedia.org</IRI>
+			<TYPE>OWL</TYPE>
+		</GRAPH>
+	</GRAPHS>
+</SERVER>
+-->
+<!--
+<SERVER>
+	<URL>kmi-web03.open.ac.uk</URL>
+	<PORT>8890</PORT>
+	<LOGIN>dba</LOGIN>
+	<PASSWORD>dba</PASSWORD>
+	<GRAPHS>
+		<GRAPH>
+			<IRI>http://dbpedia.org</IRI>
+			<TYPE>OWL</TYPE>
+		</GRAPH>
+	</GRAPHS>
+</SERVER>
+
+<SERVER>
+	<URL>kmi-web15.open.ac.uk</URL>
+	<PORT>8890</PORT>
+	<LOGIN>dba</LOGIN>
+	<PASSWORD>dba</PASSWORD>
+	<GRAPHS>
+		<GRAPH>
+			<IRI>http://dbpedia.org</IRI>
+			<TYPE>OWL</TYPE>
+		</GRAPH>
+		<GRAPH>
+			<IRI>http://data.open.ac.uk</IRI>
+			<TYPE>OWL</TYPE>
+		</GRAPH>
+	</GRAPHS>
+</SERVER>
+
+-->
+<SERVER>
+	<URL>kmi-web15.open.ac.uk</URL>
+	<PORT>8890</PORT>
+	<LOGIN>dba</LOGIN>
+	<PASSWORD>dba</PASSWORD>
+	<GRAPHS>
+		<GRAPH>
+			<IRI>http://dbpedia.org</IRI>
+			<TYPE>OWL</TYPE>
+		</GRAPH>
+	</GRAPHS>
+</SERVER>
+
+</CONFIGURATION>

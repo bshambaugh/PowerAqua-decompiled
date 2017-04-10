@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--In order to use PowerMap the metadata table ontologyindexrelation should be created - see mysql indexes backups -
+-->
+<CONFIGURATION>
+	<WATSON>true</WATSON>
+	<POWERMAP>true</POWERMAP>
+	<VIRTUOSO>true</VIRTUOSO>
+	<REMOTESPARQLVIRTUOSO>false</REMOTESPARQLVIRTUOSO>
+  	<ONTOLOGY_INDEX_DB>jdbc:mysql://localhost:3306/ontologyindexrelation</ONTOLOGY_INDEX_DB> 
+  	<ONTOLOGY_INDEX_DB_LOGIN>root</ONTOLOGY_INDEX_DB_LOGIN> 
+  	<ONTOLOGY_INDEX_DB_PASSWORD></ONTOLOGY_INDEX_DB_PASSWORD>   
+	<INDEX_GLOBAL_PATH>/Applications/apache-tomcat-5.5.23/webapps/poweraqualinked/LuceneIndexes/</INDEX_GLOBAL_PATH>		
+	<INDEX_INFO_FOLDER>./indexListInformation/indexkmiweb07-philips/</INDEX_INFO_FOLDER>	
+	
+</CONFIGURATION>
