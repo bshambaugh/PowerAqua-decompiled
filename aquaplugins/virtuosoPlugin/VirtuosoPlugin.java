@@ -2683,260 +2683,80 @@ public class VirtuosoPlugin
   public void initializeServer(String proxyHost, String proxyPort)
     throws Exception
   {}
-  
-  /* Error */
-  public String entityType(String onto, String e)
-  {
-    // Byte code:
-    //   0: new 19	java/lang/StringBuilder
-    //   3: dup
-    //   4: invokespecial 20	java/lang/StringBuilder:<init>	()V
-    //   7: ldc_w 649
-    //   10: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   13: aload_0
-    //   14: getfield 12	virtuosoPlugin/VirtuosoPlugin:repository	Lpoweraqua/serviceConfig/RepositoryVirtuoso;
-    //   17: invokevirtual 23	poweraqua/serviceConfig/RepositoryVirtuoso:getGraphIRI	()Ljava/lang/String;
-    //   20: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   23: ldc_w 650
-    //   26: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   29: ldc_w 651
-    //   32: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   35: aload_2
-    //   36: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   39: ldc_w 652
-    //   42: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   45: invokevirtual 29	java/lang/StringBuilder:toString	()Ljava/lang/String;
-    //   48: astore_3
-    //   49: aload_0
-    //   50: aload_3
-    //   51: iconst_m1
-    //   52: invokespecial 31	virtuosoPlugin/VirtuosoPlugin:execute	(Ljava/lang/String;I)V
-    //   55: aload_0
-    //   56: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   59: ifnull +37 -> 96
-    //   62: iconst_0
-    //   63: istore 4
-    //   65: aload_0
-    //   66: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   69: invokeinterface 106 1 0
-    //   74: ifeq +9 -> 83
-    //   77: iinc 4 1
-    //   80: goto -15 -> 65
-    //   83: iload 4
-    //   85: ifle +11 -> 96
-    //   88: ldc_w 653
-    //   91: astore 5
-    //   93: aload 5
-    //   95: areturn
-    //   96: new 19	java/lang/StringBuilder
-    //   99: dup
-    //   100: invokespecial 20	java/lang/StringBuilder:<init>	()V
-    //   103: ldc_w 649
-    //   106: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   109: aload_0
-    //   110: getfield 12	virtuosoPlugin/VirtuosoPlugin:repository	Lpoweraqua/serviceConfig/RepositoryVirtuoso;
-    //   113: invokevirtual 23	poweraqua/serviceConfig/RepositoryVirtuoso:getGraphIRI	()Ljava/lang/String;
-    //   116: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   119: ldc_w 654
-    //   122: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   125: ldc_w 651
-    //   128: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   131: aload_2
-    //   132: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   135: ldc_w 652
-    //   138: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   141: invokevirtual 29	java/lang/StringBuilder:toString	()Ljava/lang/String;
-    //   144: astore_3
-    //   145: aload_0
-    //   146: aload_3
-    //   147: iconst_m1
-    //   148: invokespecial 31	virtuosoPlugin/VirtuosoPlugin:execute	(Ljava/lang/String;I)V
-    //   151: aload_0
-    //   152: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   155: ifnull +37 -> 192
-    //   158: iconst_0
-    //   159: istore 4
-    //   161: aload_0
-    //   162: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   165: invokeinterface 106 1 0
-    //   170: ifeq +9 -> 179
-    //   173: iinc 4 1
-    //   176: goto -15 -> 161
-    //   179: iload 4
-    //   181: ifle +11 -> 192
-    //   184: ldc_w 653
-    //   187: astore 5
-    //   189: aload 5
-    //   191: areturn
-    //   192: new 19	java/lang/StringBuilder
-    //   195: dup
-    //   196: invokespecial 20	java/lang/StringBuilder:<init>	()V
-    //   199: ldc_w 655
-    //   202: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   205: aload_0
-    //   206: getfield 12	virtuosoPlugin/VirtuosoPlugin:repository	Lpoweraqua/serviceConfig/RepositoryVirtuoso;
-    //   209: invokevirtual 23	poweraqua/serviceConfig/RepositoryVirtuoso:getGraphIRI	()Ljava/lang/String;
-    //   212: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   215: ldc_w 656
-    //   218: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   221: ldc_w 657
-    //   224: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   227: aload_2
-    //   228: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   231: ldc_w 658
-    //   234: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   237: ldc_w 659
-    //   240: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   243: ldc_w 660
-    //   246: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   249: invokevirtual 29	java/lang/StringBuilder:toString	()Ljava/lang/String;
-    //   252: astore_3
-    //   253: aload_0
-    //   254: aload_3
-    //   255: iconst_m1
-    //   256: invokespecial 31	virtuosoPlugin/VirtuosoPlugin:execute	(Ljava/lang/String;I)V
-    //   259: aload_0
-    //   260: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   263: ifnull +37 -> 300
-    //   266: iconst_0
-    //   267: istore 4
-    //   269: aload_0
-    //   270: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   273: invokeinterface 106 1 0
-    //   278: ifeq +9 -> 287
-    //   281: iinc 4 1
-    //   284: goto -15 -> 269
-    //   287: iload 4
-    //   289: ifle +11 -> 300
-    //   292: ldc_w 661
-    //   295: astore 5
-    //   297: aload 5
-    //   299: areturn
-    //   300: new 19	java/lang/StringBuilder
-    //   303: dup
-    //   304: invokespecial 20	java/lang/StringBuilder:<init>	()V
-    //   307: ldc_w 655
-    //   310: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   313: aload_0
-    //   314: getfield 12	virtuosoPlugin/VirtuosoPlugin:repository	Lpoweraqua/serviceConfig/RepositoryVirtuoso;
-    //   317: invokevirtual 23	poweraqua/serviceConfig/RepositoryVirtuoso:getGraphIRI	()Ljava/lang/String;
-    //   320: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   323: ldc_w 662
-    //   326: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   329: ldc_w 657
-    //   332: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   335: aload_2
-    //   336: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   339: ldc_w 652
-    //   342: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   345: invokevirtual 29	java/lang/StringBuilder:toString	()Ljava/lang/String;
-    //   348: astore_3
-    //   349: aload_0
-    //   350: aload_3
-    //   351: iconst_m1
-    //   352: invokespecial 31	virtuosoPlugin/VirtuosoPlugin:execute	(Ljava/lang/String;I)V
-    //   355: aload_0
-    //   356: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   359: ifnull +37 -> 396
-    //   362: iconst_0
-    //   363: istore 4
-    //   365: aload_0
-    //   366: getfield 105	virtuosoPlugin/VirtuosoPlugin:result	Ljava/sql/ResultSet;
-    //   369: invokeinterface 106 1 0
-    //   374: ifeq +9 -> 383
-    //   377: iinc 4 1
-    //   380: goto -15 -> 365
-    //   383: iload 4
-    //   385: ifle +11 -> 396
-    //   388: ldc_w 661
-    //   391: astore 5
-    //   393: aload 5
-    //   395: areturn
-    //   396: ldc_w 663
-    //   399: astore 4
-    //   401: aload 4
-    //   403: areturn
-    //   404: astore 6
-    //   406: aload 6
-    //   408: athrow
-    //   409: astore_3
-    //   410: getstatic 8	java/lang/System:out	Ljava/io/PrintStream;
-    //   413: new 19	java/lang/StringBuilder
-    //   416: dup
-    //   417: invokespecial 20	java/lang/StringBuilder:<init>	()V
-    //   420: ldc_w 635
-    //   423: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   426: aload_1
-    //   427: invokevirtual 22	java/lang/StringBuilder:append	(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    //   430: invokevirtual 29	java/lang/StringBuilder:toString	()Ljava/lang/String;
-    //   433: invokevirtual 10	java/io/PrintStream:println	(Ljava/lang/String;)V
-    //   436: aconst_null
-    //   437: areturn
-    // Line number table:
-    //   Java source line #4268	-> byte code offset #0
-    //   Java source line #4271	-> byte code offset #49
-    //   Java source line #4272	-> byte code offset #55
-    //   Java source line #4273	-> byte code offset #62
-    //   Java source line #4274	-> byte code offset #65
-    //   Java source line #4275	-> byte code offset #77
-    //   Java source line #4276	-> byte code offset #83
-    //   Java source line #4277	-> byte code offset #88
-    //   Java source line #4281	-> byte code offset #96
-    //   Java source line #4284	-> byte code offset #145
-    //   Java source line #4285	-> byte code offset #151
-    //   Java source line #4286	-> byte code offset #158
-    //   Java source line #4287	-> byte code offset #161
-    //   Java source line #4288	-> byte code offset #173
-    //   Java source line #4289	-> byte code offset #179
-    //   Java source line #4290	-> byte code offset #184
-    //   Java source line #4296	-> byte code offset #192
-    //   Java source line #4301	-> byte code offset #253
-    //   Java source line #4302	-> byte code offset #259
-    //   Java source line #4303	-> byte code offset #266
-    //   Java source line #4304	-> byte code offset #269
-    //   Java source line #4305	-> byte code offset #281
-    //   Java source line #4306	-> byte code offset #287
-    //   Java source line #4307	-> byte code offset #292
-    //   Java source line #4312	-> byte code offset #300
-    //   Java source line #4315	-> byte code offset #349
-    //   Java source line #4316	-> byte code offset #355
-    //   Java source line #4317	-> byte code offset #362
-    //   Java source line #4318	-> byte code offset #365
-    //   Java source line #4319	-> byte code offset #377
-    //   Java source line #4320	-> byte code offset #383
-    //   Java source line #4321	-> byte code offset #388
-    //   Java source line #4324	-> byte code offset #396
-    //   Java source line #4325	-> byte code offset #404
-    //   Java source line #4329	-> byte code offset #409
-    //   Java source line #4330	-> byte code offset #410
-    //   Java source line #4332	-> byte code offset #436
-    // Local variable table:
-    //   start	length	slot	name	signature
-    //   0	438	0	this	VirtuosoPlugin
-    //   0	438	1	onto	String
-    //   0	438	2	e	String
-    //   48	303	3	sparql	String
-    //   409	2	3	ex	Exception
-    //   63	21	4	rowCount	int
-    //   159	21	4	rowCount	int
-    //   267	21	4	rowCount	int
-    //   363	39	4	rowCount	int
-    //   91	303	5	str1	String
-    //   404	3	6	localObject	Object
-    // Exception table:
-    //   from	to	target	type
-    //   0	93	404	finally
-    //   96	189	404	finally
-    //   192	297	404	finally
-    //   300	393	404	finally
-    //   396	401	404	finally
-    //   404	406	404	finally
-    //   0	93	409	java/lang/Exception
-    //   96	189	409	java/lang/Exception
-    //   192	297	409	java/lang/Exception
-    //   300	393	409	java/lang/Exception
-    //   396	401	409	java/lang/Exception
-    //   404	409	409	java/lang/Exception
-  }
-}
+
+/* Returns the type for the entity according to the three static values of this interface */
+    public String entityType(String onto, String e){
+        //  "Class"
+        //  "Property"
+        //  "Individual"
+        try { try {
+//        con = getSesameRepository().getConnection();
+//        String serql = "select c from {c} rdf:type {owl:Class} FROM <" + this.repository.getGraphIRI() + "> WHERE c=<"+e+">";
+        String sparql = "SELECT ?c" +
+				    	" FROM  <" + this.repository.getGraphIRI() + "> WHERE { ?c rdf:type owl:Class. " +
+				    	"FILTER (str(?c) = <" + e + ">)}" ;//not posible to put it in the where clause <" + e + "> instead of ?p, needed in select
+        execute (sparql,-1);
+        if (result != null){
+          int rowCount=0;
+          while (result.next())
+              rowCount++;
+          if (rowCount > 0)
+              return "Class";
+        }
+
+//        serql = "select c from {c} rdf:type {rdfs:Class} FROM <" + this.repository.getGraphIRI() + "> WHERE c=<"+e+">";
+        sparql = "SELECT ?c" +
+		    	" FROM  <" + this.repository.getGraphIRI() + "> WHERE { ?c rdf:type rdfs:Class . " +
+		    	"FILTER (str(?c) = <" + e + ">)}" ;//not posible to put it in the where clause <" + e + "> instead of ?p, needed in select
+        execute (sparql,-1);
+        if (result != null){
+          int rowCount=0;
+          while (result.next())
+              rowCount++;
+          if (rowCount > 0)
+              return "Class";
+        }
+
+//        serql = "select p from {p} rdf:type {X} " +
+//          " FROM  <" + this.repository.getGraphIRI() + "> WHERE  p=<"+e+"> and (X = <http://www.w3.org/2002/07/owl#ObjectProperty> or X = <http://www.w3.org/2002/07/owl#DataProperty> " +
+//          "or X = <http://www.w3.org/2002/07/owl#DatatypeProperty> or X=<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>) ";
+        sparql = "SELECT ?p" +
+		    	" FROM  <" + this.repository.getGraphIRI() + "> WHERE { ?p rdf:type ?X . " +
+		    	"FILTER ( str(?p) = <" + e + "> && " +//not posible to put it in the where clause <" + e + "> instead of ?p, needed in select
+		    			"(str(?X) = <http://www.w3.org/2002/07/owl#ObjectProperty> || str(?X) = <http://www.w3.org/2002/07/owl#DataProperty> ||" +
+		    			" str(?X) = <http://www.w3.org/2002/07/owl#DatatypeProperty> || str(?X) = <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>) )}" ;
+        execute (sparql,-1);
+        if (result != null){
+          int rowCount=0;
+          while (result.next())
+              rowCount++;
+          if (rowCount > 0)
+              return "Property";
+        }
+
+
+//        serql=" select p from {p} rdf:type {rdf:Property} FROM <" + this.repository.getGraphIRI() + "> WHERE  p=<"+e+">";
+        sparql = "SELECT ?p" +
+		    	" FROM  <" + this.repository.getGraphIRI() + "> WHERE { ?p rdf:type rdf:Property . " +
+		    	"FILTER ( str(?p) = <" + e + ">)}" ;//not posible to put it in the where clause <" + e + "> instead of ?p, needed in select
+        execute (sparql,-1);
+        if (result != null){
+          int rowCount=0;
+          while (result.next())
+              rowCount++;
+          if (rowCount > 0)
+              return "Property";
+        }
+
+        return "Individual";
+        } finally {
+//          con.close();
+          //result.close(); // needed for repository(sesame)
+          }
+        }catch (Exception ex) {
+           System.out.println("Exception counting number of triples to calculate trust in " + onto);
+       }
+        return null;
+    }
+
 
